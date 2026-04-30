@@ -3,6 +3,7 @@
 <img width="399" height="361" alt="image" src="https://github.com/user-attachments/assets/86682996-6a10-42c0-b6b3-92f724bc662e" />
 <img width="556" height="468" alt="image" src="https://github.com/user-attachments/assets/55bba181-c7be-4265-bc22-1bde7f43d2e0" />
 
+
 Este é um sistema de gerenciamento de usuários (CRUD) desenvolvido em Java utilizando a biblioteca gráfica **Swing**. O projeto conta com um sistema de autenticação seguro, interface intuitiva e persistência de dados em banco de dados MySQL.
 
 ## 📋 Funcionalidades
@@ -57,40 +58,25 @@ CREATE TABLE logins (
     usuario VARCHAR(50) UNIQUE NOT NULL,
     senha VARCHAR(255) NOT NULL
 );
-```sql
+
+```
 
 
-3. Conexão
+### 3. Conexão
 Certifique-se de configurar as credenciais do seu banco de dados na classe DBConnection.java.
 
-🚀 Como Executar
-Clone o repositório.
+## 🚀 Como Executar
+- Clone o repositório.
+- Abra o projeto no NetBeans.
+- Caso encontre o erro UnsupportedClassVersionError, clique com o botão direito no projeto -> Propriedades -> Sources e mude o Binary
+- Format para o JDK da sua máquina.
+- Execute Limpar e Construir (ícone da vassoura).
+- Inicie pela classe Login.java.
 
-Abra o projeto no NetBeans.
-
-Caso encontre o erro UnsupportedClassVersionError, clique com o botão direito no projeto -> Propriedades -> Sources e mude o Binary Format para o JDK da sua máquina.
-
-Execute Limpar e Construir (ícone da vassoura).
-
-Inicie pela classe Login.java.
-
-📂 Estrutura de Pastas
-src/model: Classes de entidade (Usuario.java).
-
-src/dao: Classes de acesso a dados (UsuarioDAO.java, LoginDAO.java).
-
-src/view: Telas da interface gráfica (Login.java, Cadastro.java).
-
-src/controller: Lógica de conexão e utilitários de criptografia.
+## 📂 Estrutura de Pastas
+- src/model: Classes de entidade (Usuario.java).
+- src/dao: Classes de acesso a dados (UsuarioDAO.java, LoginDAO.java).
+- src/view: Telas da interface gráfica (Login.java, Cadastro.java).
+- src/controller: Lógica de conexão e utilitários de criptografia.
 
 Desenvolvido por Luís Guilherme 👨‍💻
-
-
----
-
-### Dicas para tornar o README ainda melhor:
-1. **Screenshots**: Tire prints da sua tela de Login e da tela de Cadastro e coloque-os na pasta do projeto. No Markdown, você pode exibi-los usando `![Nome](caminho/da/imagem.png)`.
-2. **Badges**: Você pode adicionar badges no topo (como versão do Java ou status do build) usando o site [Shields.io](https://shields.io/).
-3. **Licença**: Se for subir para o GitHub, lembre-se de escolher uma licença (como a MIT) para que outros saibam como podem usar seu código.
-
-O que achou desta estrutura? Se quiser mudar algum tópico ou adicionar mais detalhes técn
